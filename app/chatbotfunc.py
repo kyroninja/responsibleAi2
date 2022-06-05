@@ -60,7 +60,7 @@ def chat(sp):
 
 	tts = gTTS("you typed"+sp+"in zulu"+z1+"then chatbot said"+str(response2)+"in zulu"+z) #Provide the string to convert to speech
 	# tts.save('static/app/output.wav') #save the string converted to speech as a .wav file
-	tts.save(os.path.join(settings.BASE_DIR, 'media/output.wav') )
+	tts.save(os.path.join(settings.BASE_DIR, 'output.wav') )
 	sound_file = 'output.wav'
 
 	# Audio(sound_file, autoplay=True) 
@@ -92,4 +92,4 @@ def cloud():
                   min_font_size = 10).generate(comment_words)
 
   #wordcloud.to_file('static/app/wordcl.png')
-  wordcloud.to_file(os.path.join(settings.BASE_DIR, 'media/wordcl.png'))
+  wordcloud.to_file(os.path.join(settings.BASE_DIR, 'wordcl.png'))

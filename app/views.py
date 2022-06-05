@@ -17,12 +17,12 @@ def home(request):
 
     if (request.GET.get('dbutton')):
         #response = FileResponse(open('static/app/output.wav', 'rb'), as_attachment = True)
-        response = FileResponse(open('media/output.wav', 'rb'), as_attachment = True)
+        response = FileResponse(open('output.wav', 'rb'), as_attachment = True)
         return response
 
     if (request.GET.get('pbutton')):
         #response = FileResponse(open('static/app/output.wav', 'rb'), as_attachment = True)
-        response = FileResponse(open('media/wordcl.png', 'rb'), as_attachment = True)
+        response = FileResponse(open('wordcl.png', 'rb'), as_attachment = True)
         return response
 
     return render(
