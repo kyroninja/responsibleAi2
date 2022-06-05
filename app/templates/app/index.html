@@ -1,0 +1,20 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h1>Responsible AI Hackathon</h1>
+<p><span style="color: #ff0000;"><strong>Title: Translation of speech to other languages</strong></span></p>
+<p>&nbsp;</p>
+<form action="#" method="get">
+    <label for="utext">Enter Text:</label>
+    <input id="utext" name="utext" type="text" value="" /><br /><br />
+    <img src="wordcl.png" alt="wordcloud" width="500" height="500" /><br /><br />
+    <input type="submit" class="btn" value="Translate" name="tbutton" />
+</form>
+
+<form action="#" method="get">
+    <input type="submit" class="btn" value="Download A" name="dbutton" />
+    <input type="submit" class="btn" value="Download P" name="pbutton" />
+</form>
+
+{% endblock %}
